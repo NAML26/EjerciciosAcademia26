@@ -7,3 +7,4 @@ Ejercicios semanales del bootcamp de Java.
 
 ## Estructura
 - `semana1/` - Variables, métodos, condicionales, Strings, POO, herencia
+`semana2/` - Generics, iterators, enums, functional interfaces, design patterns (Builder, Decorator, Observer, Strategy)
