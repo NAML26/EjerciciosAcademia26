@@ -19,7 +19,7 @@ public class Contact implements Comparable<Contact> {
 
     @Override
     public int compareTo(Contact other) {
-        return this.name.compareTo(other.name);
+        return this.name.compareToIgnoreCase(other.name);
     }
 
     @Override
@@ -50,7 +50,7 @@ class ContactManager {
 
     public Optional<Contact> findByEmail(String email) {
         return contacts.stream()
-                .filter(c -> c.getEmail().equals(email))
+                .filter(c -> c.getEmail().equalsIgnoreCase(email))
                 .findFirst();
     }
 
